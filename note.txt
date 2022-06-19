@@ -1,0 +1,4 @@
+sudo apt install python3-virtualenv
+source venv/bin/activate 
+pip install fastapi sqlalchemy pymysql uvicorn
+
