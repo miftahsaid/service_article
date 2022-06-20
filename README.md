@@ -38,3 +38,7 @@ py -m pip install --user virtualenv <br>
 py -m venv env <br>
 .\env\Scripts\activate <br>
 uvicorn index:app --reload <br>
+<br>
+<br>
+#service request postman <br>
+- service_article.postman_collection.json <br>
