@@ -1,10 +1,10 @@
 from sqlalchemy import create_engine,MetaData
 
 user = 'root'
-password = '1'
+password = ''
 host = '127.0.0.1'
 port = 3306
-database = 'db_'
+database = 'article'
 
 engine = create_engine("mysql+pymysql://{0}:{1}@{2}:{3}/{4}".format(
 			user, password, host, port, database
