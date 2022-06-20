@@ -9,7 +9,5 @@ post_ = Table(
     Column('Title',VARCHAR(200)),
     Column('Content',Text),
     Column('Category',VARCHAR(100)),
-    Column('Created_date',TIMESTAMP),
-    Column('Updated_date',TIMESTAMP),
     Column('Status',VARCHAR(100))
 )
