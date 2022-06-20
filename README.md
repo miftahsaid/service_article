@@ -37,6 +37,7 @@ py -m pip install --user virtualenv <br>
 #activate env <br>
 py -m venv env <br>
 .\env\Scripts\activate <br>
+pip install fastapi sqlalchemy pymysql uvicorn <br>
 uvicorn index:app --reload <br>
 <br>
 <br>
