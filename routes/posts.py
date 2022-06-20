@@ -23,8 +23,6 @@ async def write_data( posts : Post_):
         Title = posts.Title,
         Content = posts.Content,
         Category = posts.Category,
-        Created_date = posts.Created_date,
-        Updated_date = posts.Updated_date,
         Status = posts.Status ))
     return conn.execute(post_.select()).fetchall()
     
@@ -35,8 +33,6 @@ async def update_data( id : int, posts : Post_):
         Title = posts.Title,
         Content = posts.Content,
         Category = posts.Category,
-        Created_date = posts.Created_date,
-        Updated_date = posts.Updated_date,
         Status = posts.Status 
     ).where(post_.c.id == id))
     return conn.execute(post_.select()).fetchall()
