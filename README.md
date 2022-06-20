@@ -15,7 +15,7 @@ CREATE TABLE `posts` (
 ); <br>
 <br>
 
-#set database mysql  <br>
+#config database mysql  <br>
 config/db.py <br>
 <br>
 #install virtualenv  <br>
@@ -28,3 +28,13 @@ source venv/bin/activate  <br>
 pip install fastapi sqlalchemy pymysql uvicorn <br>
 uvicorn index:app --reload <br>
 - lalu jalankan http yang terbentuk oleh uvicorn. <br>
+
+#install virtualenv  <br>
+#WINDOWS <br>
+py -m pip install --upgrade pip <br>
+py -m pip install --user virtualenv <br>
+
+#activate env <br>
+py -m venv env <br>
+.\env\Scripts\activate <br>
+uvicorn index:app --reload <br>
